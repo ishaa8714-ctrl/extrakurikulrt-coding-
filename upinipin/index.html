@@ -1,117 +1,50 @@
-/* Reset dasar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartun Upin & Ipin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Kartun Upin & Ipin</h1>
+            <p>Petualangan Lucu di Desa Indah</p>
+        </div>
+    </header>
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    background-image: url('assets/bg-desa.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #fff;
-}
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Selamat Datang di Dunia Upin & Ipin</h2>
+                <p>Nikmati cerita seru mereka di desa yang asri dan damai!</p>
+            </div>
+        </section>
 
-/* Container utama */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
+        <section class="characters">
+            <div class="container">
+                <h2>Karakter Lucu</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="assets/upin.png" alt="Upin" />
+                        <h3>Upin</h3>
+                        <p>Upin adalah anak ceria dan pintar yang suka petualangan.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/ipin.png" alt="Ipin" />
+                        <h3>Ipin</h3>
+                        <p>Ipin adalah saudara kembar Upin yang suka makan ayam goreng!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-/* Header */
-header {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
-header p {
-    font-style: italic;
-}
-
-/* Hero Section */
-.hero {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 2em;
-}
-
-.hero p {
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-/* Character Section */
-.characters {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #333;
-    padding: 40px 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 40px 0;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.card h3 {
-    margin-top: 15px;
-    font-size: 1.4em;
-}
-
-.card p {
-    font-size: 0.95em;
-    margin-top: 10px;
-}
-
-/* Footer */
-footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    padding: 15px 0;
-    font-size: 0.9em;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dunia Upin & Ipin | Web by Kamu</p>
+        </div>
+    </footer>
+</body>
+</html>
